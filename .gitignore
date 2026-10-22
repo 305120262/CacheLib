@@ -7,8 +7,11 @@ data/
 # 排除所有以 .tmp 结尾的文件
 *.tmp
 
+.vscode/
+
 # 排除构建产物、日志等常见目录
 build/
 dist/
 *.log
 .env
+AGENTS.md
