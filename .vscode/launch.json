@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+
+
+        {
+            "name": "Debug cachemerge",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            // 指向包含 main.go 的源码目录，而非 exe 所在目录
+            "program": "${workspaceFolder}/cmd/cachemerge",
+            // 设置程序运行时的工作目录（对应你 cd 后的目录）
+            "cwd": "${workspaceFolder}/cmd/cachemerge",
+            "args": [
+                "-origin",
+                "D:\\Data\\Projects\\CacheLib\\data\\zhuhai",
+                "-output",
+                "D:\\Data\\Projects\\CacheLib\\data\\zhuhai2",
+                "-overlay",
+                "D:\\Data\\Projects\\CacheLib\\data\\overlay\\地图",
+                "-workers",
+                "1"
+            ],
+            // 调试结束后不自动打开浏览器
+            "showLog": false,
+            // 确保使用与 go build 一致的环境
+            "env": {}
+        }
+    ]
+}
